@@ -1,7 +1,7 @@
 <div align="center">
   <br />
     <a href="https://youtu.be/zgGhzuBZOQg" target="_blank">
-      ![Uploading Screenshot 2023-12-27 113027.png…]()
+      <img src="https://github.com/pandawaa/clean-app-store/public/assets/images/home-page.png alt="Project Banner">
     </a>
   <br />
 
@@ -30,7 +30,7 @@
 
 ## 🚨 Tutorial
 
-This repository contains the code corresponding to an in-depth tutorial available on our YouTube channel, <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a>. 
+This repository contains the code corresponding to an in-depth tutorial available on our YouTube channel, <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a>.
 
 If you prefer visual learning, this is the perfect resource for you. Follow our tutorial to learn how to build projects like these step-by-step in a beginner-friendly manner!
 
@@ -61,26 +61,27 @@ If you're getting started and need assistance or face any bugs, join our active 
 👉 **Authentication (CRUD) with Clerk:** User management through Clerk, ensuring secure and efficient authentication.
 
 👉 **Events (CRUD):** Comprehensive functionality for creating, reading, updating, and deleting events, giving users full control over event management.
+
 - **Create Events:** Users can effortlessly generate new events, providing essential details such as title, date, location, and any additional information.
 - **Read Events:** Seamless access to a detailed view of all events, allowing users to explore event specifics, including descriptions, schedules, and related information.
 - **Update Events:** Empowering users to modify event details dynamically, ensuring that event information remains accurate and up-to-date.
 - **Delete Events:** A straightforward process for removing events from the system, giving administrators the ability to manage and curate the platform effectively.
-        
+
 👉 **Related Events:** Smartly connects events that are related and displaying on the event details page, making it more engaging for users
-    
+
 👉 **Organized Events:** Efficient organization of events, ensuring a structured and user-friendly display for the audience, i.e., showing events created by the user on the user profile
-    
+
 👉 **Search & Filter:** Empowering users with a robust search and filter system, enabling them to easily find the events that match their preferences.
-    
+
 👉 **New Category:** Dynamic categorization allows for the seamless addition of new event categories, keeping your platform adaptable.
-    
+
 👉 **Checkout and Pay with Stripe:** Smooth and secure payment transactions using Stripe, enhancing user experience during the checkout process.
-    
+
 👉 **Event Orders:** Comprehensive order management system, providing a clear overview of all event-related transactions.
-    
+
 👉 **Search Orders:** Quick and efficient search functionality for orders, facilitating easy tracking and management.
 
-and many more, including code architecture and reusability 
+and many more, including code architecture and reusability
 
 ## <a name="quick-start">🤸 Quick Start</a>
 
@@ -140,7 +141,7 @@ STRIPE_WEBHOOK_SECRET=
 NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=
 ```
 
-Replace the placeholder values with your actual credentials 
+Replace the placeholder values with your actual credentials
 
 **Running the Project**
 
@@ -232,12 +233,14 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 }
 
 body {
-  font-family: var(--font-poppins)
+  font-family: var(--font-poppins);
 }
 
 .filter-grey {
-  filter: brightness(0) saturate(100%) invert(47%) sepia(0%) saturate(217%)
-    hue-rotate(32deg) brightness(98%) contrast(92%);
+  filter: brightness(0) saturate(100%) invert(47%) sepia(0%) saturate(217%) hue-rotate(
+      32deg
+    )
+    brightness(98%) contrast(92%);
 }
 
 /* ========================================== TAILWIND STYLES */
@@ -408,7 +411,7 @@ body {
 .cl-formButtonPrimary:hover,
 .cl-formButtonPrimary:focus,
 .cl-formButtonPrimary:active {
-  background-color: #705CF7
+  background-color: #705cf7;
 }
 
 /* ========================================== REACT-DATEPICKER STYLES */
@@ -433,6 +436,7 @@ body {
   background-color: #624cf5 !important;
 }
 ```
+
 </details>
 
 <details>
@@ -440,103 +444,103 @@ body {
 
 ```typescript
 /** @type {import('tailwindcss').Config} */
-import { withUt } from 'uploadthing/tw';
+import { withUt } from "uploadthing/tw"
 
 module.exports = withUt({
-  darkMode: ['class'],
+  darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
   ],
   theme: {
     container: {
       center: true,
-      padding: '2rem',
+      padding: "2rem",
       screens: {
-        '2xl': '1400px',
+        "2xl": "1400px",
       },
     },
     extend: {
       colors: {
         primary: {
-          500: '#624CF5',
-          50: ' #F6F8FD',
-          DEFAULT: '#624CF5',
-          foreground: 'hsl(var(--primary-foreground))',
+          500: "#624CF5",
+          50: " #F6F8FD",
+          DEFAULT: "#624CF5",
+          foreground: "hsl(var(--primary-foreground))",
         },
         coral: {
-          500: '#15BF59',
+          500: "#15BF59",
         },
 
         grey: {
-          600: '#545454', // Subdued - color name in figma
-          500: '#757575',
-          400: '#AFAFAF', // Disabled - color name in figma
-          50: '#F6F6F6', // White Grey - color name in figma
+          600: "#545454", // Subdued - color name in figma
+          500: "#757575",
+          400: "#AFAFAF", // Disabled - color name in figma
+          50: "#F6F6F6", // White Grey - color name in figma
         },
-        black: '#000000',
-        white: '#FFFFFF',
-        border: 'hsl(var(--border))',
-        input: 'hsl(var(--input))',
-        ring: 'hsl(var(--ring))',
-        foreground: 'hsl(var(--foreground))',
+        black: "#000000",
+        white: "#FFFFFF",
+        border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
+        foreground: "hsl(var(--foreground))",
         secondary: {
-          DEFAULT: 'hsl(var(--secondary))',
-          foreground: 'hsl(var(--secondary-foreground))',
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
         },
         destructive: {
-          DEFAULT: 'hsl(var(--destructive))',
-          foreground: 'hsl(var(--destructive-foreground))',
+          DEFAULT: "hsl(var(--destructive))",
+          foreground: "hsl(var(--destructive-foreground))",
         },
         muted: {
-          DEFAULT: 'hsl(var(--muted))',
-          foreground: 'hsl(var(--muted-foreground))',
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
         },
         accent: {
-          DEFAULT: 'hsl(var(--accent))',
-          foreground: 'hsl(var(--accent-foreground))',
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
         },
         popover: {
-          DEFAULT: 'hsl(var(--popover))',
-          foreground: 'hsl(var(--popover-foreground))',
+          DEFAULT: "hsl(var(--popover))",
+          foreground: "hsl(var(--popover-foreground))",
         },
         card: {
-          DEFAULT: 'hsl(var(--card))',
-          foreground: 'hsl(var(--card-foreground))',
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))",
         },
       },
       fontFamily: {
-        poppins: ['var(--font-poppins)'],
+        poppins: ["var(--font-poppins)"],
       },
       backgroundImage: {
-        'dotted-pattern': "url('/assets/images/dotted-pattern.png')",
-        'hero-img': "url('/assets/images/hero.png')",
+        "dotted-pattern": "url('/assets/images/dotted-pattern.png')",
+        "hero-img": "url('/assets/images/hero.png')",
       },
       borderRadius: {
-        lg: 'var(--radius)',
-        md: 'calc(var(--radius) - 2px)',
-        sm: 'calc(var(--radius) - 4px)',
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
-        'accordion-down': {
-          from: { height: '0' },
-          to: { height: 'var(--radix-accordion-content-height)' },
+        "accordion-down": {
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
-        'accordion-up': {
-          from: { height: 'var(--radix-accordion-content-height)' },
-          to: { height: '0' },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
       },
       animation: {
-        'accordion-down': 'accordion-down 0.2s ease-out',
-        'accordion-up': 'accordion-up 0.2s ease-out',
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
   },
-  plugins: [require('tailwindcss-animate')],
-});
+  plugins: [require("tailwindcss-animate")],
+})
 ```
 
 </details>
@@ -545,44 +549,45 @@ module.exports = withUt({
 <summary><code>Clerk webhook</code></summary>
 
 ```typescript
-import { Webhook } from 'svix'
-import { headers } from 'next/headers'
-import { WebhookEvent } from '@clerk/nextjs/server'
-import { createUser, deleteUser, updateUser } from '@/lib/actions/user.actions'
-import { clerkClient } from '@clerk/nextjs'
-import { NextResponse } from 'next/server'
- 
+import { Webhook } from "svix"
+import { headers } from "next/headers"
+import { WebhookEvent } from "@clerk/nextjs/server"
+import { createUser, deleteUser, updateUser } from "@/lib/actions/user.actions"
+import { clerkClient } from "@clerk/nextjs"
+import { NextResponse } from "next/server"
+
 export async function POST(req: Request) {
- 
   // You can find this in the Clerk Dashboard -> Webhooks -> choose the webhook
   const WEBHOOK_SECRET = process.env.WEBHOOK_SECRET
- 
+
   if (!WEBHOOK_SECRET) {
-    throw new Error('Please add WEBHOOK_SECRET from Clerk Dashboard to .env or .env.local')
+    throw new Error(
+      "Please add WEBHOOK_SECRET from Clerk Dashboard to .env or .env.local"
+    )
   }
- 
+
   // Get the headers
-  const headerPayload = headers();
-  const svix_id = headerPayload.get("svix-id");
-  const svix_timestamp = headerPayload.get("svix-timestamp");
-  const svix_signature = headerPayload.get("svix-signature");
- 
+  const headerPayload = headers()
+  const svix_id = headerPayload.get("svix-id")
+  const svix_timestamp = headerPayload.get("svix-timestamp")
+  const svix_signature = headerPayload.get("svix-signature")
+
   // If there are no headers, error out
   if (!svix_id || !svix_timestamp || !svix_signature) {
-    return new Response('Error occured -- no svix headers', {
-      status: 400
+    return new Response("Error occured -- no svix headers", {
+      status: 400,
     })
   }
- 
+
   // Get the body
   const payload = await req.json()
-  const body = JSON.stringify(payload);
- 
+  const body = JSON.stringify(payload)
+
   // Create a new Svix instance with your secret.
-  const wh = new Webhook(WEBHOOK_SECRET);
- 
+  const wh = new Webhook(WEBHOOK_SECRET)
+
   let evt: WebhookEvent
- 
+
   // Verify the payload with the headers
   try {
     evt = wh.verify(body, {
@@ -591,18 +596,19 @@ export async function POST(req: Request) {
       "svix-signature": svix_signature,
     }) as WebhookEvent
   } catch (err) {
-    console.error('Error verifying webhook:', err);
-    return new Response('Error occured', {
-      status: 400
+    console.error("Error verifying webhook:", err)
+    return new Response("Error occured", {
+      status: 400,
     })
   }
- 
+
   // Get the ID and type
-  const { id } = evt.data;
-  const eventType = evt.type;
- 
-  if(eventType === 'user.created') {
-    const { id, email_addresses, image_url, first_name, last_name, username } = evt.data;
+  const { id } = evt.data
+  const eventType = evt.type
+
+  if (eventType === "user.created") {
+    const { id, email_addresses, image_url, first_name, last_name, username } =
+      evt.data
 
     const user = {
       clerkId: id,
@@ -613,21 +619,21 @@ export async function POST(req: Request) {
       photo: image_url,
     }
 
-    const newUser = await createUser(user);
+    const newUser = await createUser(user)
 
-    if(newUser) {
+    if (newUser) {
       await clerkClient.users.updateUserMetadata(id, {
         publicMetadata: {
-          userId: newUser._id
-        }
+          userId: newUser._id,
+        },
       })
     }
 
-    return NextResponse.json({ message: 'OK', user: newUser })
+    return NextResponse.json({ message: "OK", user: newUser })
   }
 
-  if (eventType === 'user.updated') {
-    const {id, image_url, first_name, last_name, username } = evt.data
+  if (eventType === "user.updated") {
+    const { id, image_url, first_name, last_name, username } = evt.data
 
     const user = {
       firstName: first_name,
@@ -638,37 +644,38 @@ export async function POST(req: Request) {
 
     const updatedUser = await updateUser(id, user)
 
-    return NextResponse.json({ message: 'OK', user: updatedUser })
+    return NextResponse.json({ message: "OK", user: updatedUser })
   }
 
-  if (eventType === 'user.deleted') {
+  if (eventType === "user.deleted") {
     const { id } = evt.data
 
     const deletedUser = await deleteUser(id!)
 
-    return NextResponse.json({ message: 'OK', user: deletedUser })
+    return NextResponse.json({ message: "OK", user: deletedUser })
   }
- 
-  return new Response('', { status: 200 })
+
+  return new Response("", { status: 200 })
 }
 ```
+
 </details>
 
 <details>
 <summary><code>user.actions.ts</code></summary>
 
 ```typescript
-'use server'
+"use server"
 
-import { revalidatePath } from 'next/cache'
+import { revalidatePath } from "next/cache"
 
-import { connectToDatabase } from '@/lib/database'
-import User from '@/lib/database/models/user.model'
-import Order from '@/lib/database/models/order.model'
-import Event from '@/lib/database/models/event.model'
-import { handleError } from '@/lib/utils'
+import { connectToDatabase } from "@/lib/database"
+import User from "@/lib/database/models/user.model"
+import Order from "@/lib/database/models/order.model"
+import Event from "@/lib/database/models/event.model"
+import { handleError } from "@/lib/utils"
 
-import { CreateUserParams, UpdateUserParams } from '@/types'
+import { CreateUserParams, UpdateUserParams } from "@/types"
 
 export async function createUser(user: CreateUserParams) {
   try {
@@ -687,7 +694,7 @@ export async function getUserById(userId: string) {
 
     const user = await User.findById(userId)
 
-    if (!user) throw new Error('User not found')
+    if (!user) throw new Error("User not found")
     return JSON.parse(JSON.stringify(user))
   } catch (error) {
     handleError(error)
@@ -698,9 +705,11 @@ export async function updateUser(clerkId: string, user: UpdateUserParams) {
   try {
     await connectToDatabase()
 
-    const updatedUser = await User.findOneAndUpdate({ clerkId }, user, { new: true })
+    const updatedUser = await User.findOneAndUpdate({ clerkId }, user, {
+      new: true,
+    })
 
-    if (!updatedUser) throw new Error('User update failed')
+    if (!updatedUser) throw new Error("User update failed")
     return JSON.parse(JSON.stringify(updatedUser))
   } catch (error) {
     handleError(error)
@@ -715,7 +724,7 @@ export async function deleteUser(clerkId: string) {
     const userToDelete = await User.findOne({ clerkId })
 
     if (!userToDelete) {
-      throw new Error('User not found')
+      throw new Error("User not found")
     }
 
     // Unlink relationships
@@ -727,12 +736,15 @@ export async function deleteUser(clerkId: string) {
       ),
 
       // Update the 'orders' collection to remove references to the user
-      Order.updateMany({ _id: { $in: userToDelete.orders } }, { $unset: { buyer: 1 } }),
+      Order.updateMany(
+        { _id: { $in: userToDelete.orders } },
+        { $unset: { buyer: 1 } }
+      ),
     ])
 
     // Delete user
     const deletedUser = await User.findByIdAndDelete(userToDelete._id)
-    revalidatePath('/')
+    revalidatePath("/")
 
     return deletedUser ? JSON.parse(JSON.stringify(deletedUser)) : null
   } catch (error) {
@@ -740,6 +752,7 @@ export async function deleteUser(clerkId: string) {
   }
 }
 ```
+
 </details>
 
 <details>
@@ -749,56 +762,57 @@ export async function deleteUser(clerkId: string) {
 import { Schema, model, models, Document } from 'mongoose'
 
 export interface IOrder extends Document {
-  createdAt: Date
-  stripeId: string
-  totalAmount: string
-  event: {
-    _id: string
-    title: string
-  }
-  buyer: {
-    _id: string
-    firstName: string
-    lastName: string
-  }
+createdAt: Date
+stripeId: string
+totalAmount: string
+event: {
+\_id: string
+title: string
+}
+buyer: {
+\_id: string
+firstName: string
+lastName: string
+}
 }
 
 export type IOrderItem = {
-  _id: string
-  totalAmount: string
-  createdAt: Date
-  eventTitle: string
-  eventId: string
-  buyer: string
+\_id: string
+totalAmount: string
+createdAt: Date
+eventTitle: string
+eventId: string
+buyer: string
 }
 
 const OrderSchema = new Schema({
-  createdAt: {
-    type: Date,
-    default: Date.now,
-  },
-  stripeId: {
-    type: String,
-    required: true,
-    unique: true,
-  },
-  totalAmount: {
-    type: String,
-  },
-  event: {
-    type: Schema.Types.ObjectId,
-    ref: 'Event',
-  },
-  buyer: {
-    type: Schema.Types.ObjectId,
-    ref: 'User',
-  },
+createdAt: {
+type: Date,
+default: Date.now,
+},
+stripeId: {
+type: String,
+required: true,
+unique: true,
+},
+totalAmount: {
+type: String,
+},
+event: {
+type: Schema.Types.ObjectId,
+ref: 'Event',
+},
+buyer: {
+type: Schema.Types.ObjectId,
+ref: 'User',
+},
 })
 
 const Order = models.Order || model('Order', OrderSchema)
 
 export default Order
-```
+
+````
 
 </details>
 
@@ -862,7 +876,7 @@ export function FileUploader({ imageUrl, onFieldChange, setFiles }: FileUploader
     </div>
   )
 }
-```
+````
 
 </details>
 
@@ -870,11 +884,11 @@ export function FileUploader({ imageUrl, onFieldChange, setFiles }: FileUploader
 <summary><code>DeleteConfirmation.tsx</code></summary>
 
 ```typescript
-'use client'
+"use client"
 
-import { useTransition } from 'react'
-import { usePathname } from 'next/navigation'
-import Image from 'next/image'
+import { useTransition } from "react"
+import { usePathname } from "next/navigation"
+import Image from "next/image"
 
 import {
   AlertDialog,
@@ -886,9 +900,9 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-} from '@/components/ui/alert-dialog'
+} from "@/components/ui/alert-dialog"
 
-import { deleteEvent } from '@/lib/actions/event.actions'
+import { deleteEvent } from "@/lib/actions/event.actions"
 
 export const DeleteConfirmation = ({ eventId }: { eventId: string }) => {
   const pathname = usePathname()
@@ -897,7 +911,12 @@ export const DeleteConfirmation = ({ eventId }: { eventId: string }) => {
   return (
     <AlertDialog>
       <AlertDialogTrigger>
-        <Image src="/assets/icons/delete.svg" alt="edit" width={20} height={20} />
+        <Image
+          src="/assets/icons/delete.svg"
+          alt="edit"
+          width={20}
+          height={20}
+        />
       </AlertDialogTrigger>
 
       <AlertDialogContent className="bg-white">
@@ -916,8 +935,9 @@ export const DeleteConfirmation = ({ eventId }: { eventId: string }) => {
               startTransition(async () => {
                 await deleteEvent({ eventId, path: pathname })
               })
-            }>
-            {isPending ? 'Deleting...' : 'Delete'}
+            }
+          >
+            {isPending ? "Deleting..." : "Delete"}
           </AlertDialogAction>
         </AlertDialogFooter>
       </AlertDialogContent>
@@ -932,15 +952,15 @@ export const DeleteConfirmation = ({ eventId }: { eventId: string }) => {
 <summary><code>event.action.ts</code></summary>
 
 ```typescript
-'use server'
+"use server"
 
-import { revalidatePath } from 'next/cache'
+import { revalidatePath } from "next/cache"
 
-import { connectToDatabase } from '@/lib/database'
-import Event from '@/lib/database/models/event.model'
-import User from '@/lib/database/models/user.model'
-import Category from '@/lib/database/models/category.model'
-import { handleError } from '@/lib/utils'
+import { connectToDatabase } from "@/lib/database"
+import Event from "@/lib/database/models/event.model"
+import User from "@/lib/database/models/user.model"
+import Category from "@/lib/database/models/category.model"
+import { handleError } from "@/lib/utils"
 
 import {
   CreateEventParams,
@@ -949,16 +969,20 @@ import {
   GetAllEventsParams,
   GetEventsByUserParams,
   GetRelatedEventsByCategoryParams,
-} from '@/types'
+} from "@/types"
 
 const getCategoryByName = async (name: string) => {
-  return Category.findOne({ name: { $regex: name, $options: 'i' } })
+  return Category.findOne({ name: { $regex: name, $options: "i" } })
 }
 
 const populateEvent = (query: any) => {
   return query
-    .populate({ path: 'organizer', model: User, select: '_id firstName lastName' })
-    .populate({ path: 'category', model: Category, select: '_id name' })
+    .populate({
+      path: "organizer",
+      model: User,
+      select: "_id firstName lastName",
+    })
+    .populate({ path: "category", model: Category, select: "_id name" })
 }
 
 // CREATE
@@ -967,9 +991,13 @@ export async function createEvent({ userId, event, path }: CreateEventParams) {
     await connectToDatabase()
 
     const organizer = await User.findById(userId)
-    if (!organizer) throw new Error('Organizer not found')
+    if (!organizer) throw new Error("Organizer not found")
 
-    const newEvent = await Event.create({ ...event, category: event.categoryId, organizer: userId })
+    const newEvent = await Event.create({
+      ...event,
+      category: event.categoryId,
+      organizer: userId,
+    })
     revalidatePath(path)
 
     return JSON.parse(JSON.stringify(newEvent))
@@ -985,7 +1013,7 @@ export async function getEventById(eventId: string) {
 
     const event = await populateEvent(Event.findById(eventId))
 
-    if (!event) throw new Error('Event not found')
+    if (!event) throw new Error("Event not found")
 
     return JSON.parse(JSON.stringify(event))
   } catch (error) {
@@ -1000,7 +1028,7 @@ export async function updateEvent({ userId, event, path }: UpdateEventParams) {
 
     const eventToUpdate = await Event.findById(event._id)
     if (!eventToUpdate || eventToUpdate.organizer.toHexString() !== userId) {
-      throw new Error('Unauthorized or event not found')
+      throw new Error("Unauthorized or event not found")
     }
 
     const updatedEvent = await Event.findByIdAndUpdate(
@@ -1029,19 +1057,31 @@ export async function deleteEvent({ eventId, path }: DeleteEventParams) {
 }
 
 // GET ALL EVENTS
-export async function getAllEvents({ query, limit = 6, page, category }: GetAllEventsParams) {
+export async function getAllEvents({
+  query,
+  limit = 6,
+  page,
+  category,
+}: GetAllEventsParams) {
   try {
     await connectToDatabase()
 
-    const titleCondition = query ? { title: { $regex: query, $options: 'i' } } : {}
-    const categoryCondition = category ? await getCategoryByName(category) : null
+    const titleCondition = query
+      ? { title: { $regex: query, $options: "i" } }
+      : {}
+    const categoryCondition = category
+      ? await getCategoryByName(category)
+      : null
     const conditions = {
-      $and: [titleCondition, categoryCondition ? { category: categoryCondition._id } : {}],
+      $and: [
+        titleCondition,
+        categoryCondition ? { category: categoryCondition._id } : {},
+      ],
     }
 
     const skipAmount = (Number(page) - 1) * limit
     const eventsQuery = Event.find(conditions)
-      .sort({ createdAt: 'desc' })
+      .sort({ createdAt: "desc" })
       .skip(skipAmount)
       .limit(limit)
 
@@ -1058,7 +1098,11 @@ export async function getAllEvents({ query, limit = 6, page, category }: GetAllE
 }
 
 // GET EVENTS BY ORGANIZER
-export async function getEventsByUser({ userId, limit = 6, page }: GetEventsByUserParams) {
+export async function getEventsByUser({
+  userId,
+  limit = 6,
+  page,
+}: GetEventsByUserParams) {
   try {
     await connectToDatabase()
 
@@ -1066,14 +1110,17 @@ export async function getEventsByUser({ userId, limit = 6, page }: GetEventsByUs
     const skipAmount = (page - 1) * limit
 
     const eventsQuery = Event.find(conditions)
-      .sort({ createdAt: 'desc' })
+      .sort({ createdAt: "desc" })
       .skip(skipAmount)
       .limit(limit)
 
     const events = await populateEvent(eventsQuery)
     const eventsCount = await Event.countDocuments(conditions)
 
-    return { data: JSON.parse(JSON.stringify(events)), totalPages: Math.ceil(eventsCount / limit) }
+    return {
+      data: JSON.parse(JSON.stringify(events)),
+      totalPages: Math.ceil(eventsCount / limit),
+    }
   } catch (error) {
     handleError(error)
   }
@@ -1090,17 +1137,22 @@ export async function getRelatedEventsByCategory({
     await connectToDatabase()
 
     const skipAmount = (Number(page) - 1) * limit
-    const conditions = { $and: [{ category: categoryId }, { _id: { $ne: eventId } }] }
+    const conditions = {
+      $and: [{ category: categoryId }, { _id: { $ne: eventId } }],
+    }
 
     const eventsQuery = Event.find(conditions)
-      .sort({ createdAt: 'desc' })
+      .sort({ createdAt: "desc" })
       .skip(skipAmount)
       .limit(limit)
 
     const events = await populateEvent(eventsQuery)
     const eventsCount = await Event.countDocuments(conditions)
 
-    return { data: JSON.parse(JSON.stringify(events)), totalPages: Math.ceil(eventsCount / limit) }
+    return {
+      data: JSON.parse(JSON.stringify(events)),
+      totalPages: Math.ceil(eventsCount / limit),
+    }
   } catch (error) {
     handleError(error)
   }
@@ -1115,112 +1167,123 @@ export async function getRelatedEventsByCategory({
 ```typescript
 "use server"
 
-import Stripe from 'stripe';
-import { CheckoutOrderParams, CreateOrderParams, GetOrdersByEventParams, GetOrdersByUserParams } from "@/types"
-import { redirect } from 'next/navigation';
-import { handleError } from '../utils';
-import { connectToDatabase } from '../database';
-import Order from '../database/models/order.model';
-import Event from '../database/models/event.model';
-import {ObjectId} from 'mongodb';
-import User from '../database/models/user.model';
+import Stripe from "stripe"
+import {
+  CheckoutOrderParams,
+  CreateOrderParams,
+  GetOrdersByEventParams,
+  GetOrdersByUserParams,
+} from "@/types"
+import { redirect } from "next/navigation"
+import { handleError } from "../utils"
+import { connectToDatabase } from "../database"
+import Order from "../database/models/order.model"
+import Event from "../database/models/event.model"
+import { ObjectId } from "mongodb"
+import User from "../database/models/user.model"
 
 export const checkoutOrder = async (order: CheckoutOrderParams) => {
-  const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
+  const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!)
 
-  const price = order.isFree ? 0 : Number(order.price) * 100;
+  const price = order.isFree ? 0 : Number(order.price) * 100
 
   try {
     const session = await stripe.checkout.sessions.create({
       line_items: [
         {
           price_data: {
-            currency: 'usd',
+            currency: "usd",
             unit_amount: price,
             product_data: {
-              name: order.eventTitle
-            }
+              name: order.eventTitle,
+            },
           },
-          quantity: 1
+          quantity: 1,
         },
       ],
       metadata: {
         eventId: order.eventId,
         buyerId: order.buyerId,
       },
-      mode: 'payment',
+      mode: "payment",
       success_url: `${process.env.NEXT_PUBLIC_SERVER_URL}/profile`,
       cancel_url: `${process.env.NEXT_PUBLIC_SERVER_URL}/`,
-    });
+    })
 
     redirect(session.url!)
   } catch (error) {
-    throw error;
+    throw error
   }
 }
 
 export const createOrder = async (order: CreateOrderParams) => {
   try {
-    await connectToDatabase();
-    
+    await connectToDatabase()
+
     const newOrder = await Order.create({
       ...order,
       event: order.eventId,
       buyer: order.buyerId,
-    });
+    })
 
-    return JSON.parse(JSON.stringify(newOrder));
+    return JSON.parse(JSON.stringify(newOrder))
   } catch (error) {
-    handleError(error);
+    handleError(error)
   }
 }
 
 // GET ORDERS BY EVENT
-export async function getOrdersByEvent({ searchString, eventId }: GetOrdersByEventParams) {
+export async function getOrdersByEvent({
+  searchString,
+  eventId,
+}: GetOrdersByEventParams) {
   try {
     await connectToDatabase()
 
-    if (!eventId) throw new Error('Event ID is required')
+    if (!eventId) throw new Error("Event ID is required")
     const eventObjectId = new ObjectId(eventId)
 
     const orders = await Order.aggregate([
       {
         $lookup: {
-          from: 'users',
-          localField: 'buyer',
-          foreignField: '_id',
-          as: 'buyer',
+          from: "users",
+          localField: "buyer",
+          foreignField: "_id",
+          as: "buyer",
         },
       },
       {
-        $unwind: '$buyer',
+        $unwind: "$buyer",
       },
       {
         $lookup: {
-          from: 'events',
-          localField: 'event',
-          foreignField: '_id',
-          as: 'event',
+          from: "events",
+          localField: "event",
+          foreignField: "_id",
+          as: "event",
         },
       },
       {
-        $unwind: '$event',
+        $unwind: "$event",
       },
       {
         $project: {
           _id: 1,
           totalAmount: 1,
           createdAt: 1,
-          eventTitle: '$event.title',
-          eventId: '$event._id',
+          eventTitle: "$event.title",
+          eventId: "$event._id",
           buyer: {
-            $concat: ['$buyer.firstName', ' ', '$buyer.lastName'],
+            $concat: ["$buyer.firstName", " ", "$buyer.lastName"],
           },
         },
       },
       {
         $match: {
-          $and: [{ eventId: eventObjectId }, { buyer: { $regex: RegExp(searchString, 'i') } }],
+          $and: [
+            { eventId: eventObjectId },
+            { buyer: { $regex: RegExp(searchString, "i") } },
+          ],
         },
       },
     ])
@@ -1232,31 +1295,40 @@ export async function getOrdersByEvent({ searchString, eventId }: GetOrdersByEve
 }
 
 // GET ORDERS BY USER
-export async function getOrdersByUser({ userId, limit = 3, page }: GetOrdersByUserParams) {
+export async function getOrdersByUser({
+  userId,
+  limit = 3,
+  page,
+}: GetOrdersByUserParams) {
   try {
     await connectToDatabase()
 
     const skipAmount = (Number(page) - 1) * limit
     const conditions = { buyer: userId }
 
-    const orders = await Order.distinct('event._id')
+    const orders = await Order.distinct("event._id")
       .find(conditions)
-      .sort({ createdAt: 'desc' })
+      .sort({ createdAt: "desc" })
       .skip(skipAmount)
       .limit(limit)
       .populate({
-        path: 'event',
+        path: "event",
         model: Event,
         populate: {
-          path: 'organizer',
+          path: "organizer",
           model: User,
-          select: '_id firstName lastName',
+          select: "_id firstName lastName",
         },
       })
 
-    const ordersCount = await Order.distinct('event._id').countDocuments(conditions)
+    const ordersCount = await Order.distinct("event._id").countDocuments(
+      conditions
+    )
 
-    return { data: JSON.parse(JSON.stringify(orders)), totalPages: Math.ceil(ordersCount / limit) }
+    return {
+      data: JSON.parse(JSON.stringify(orders)),
+      totalPages: Math.ceil(ordersCount / limit),
+    }
   } catch (error) {
     handleError(error)
   }
@@ -1269,15 +1341,15 @@ export async function getOrdersByUser({ userId, limit = 3, page }: GetOrdersByUs
 <summary><code>orders/page.tsx</code></summary>
 
 ```typescript
-import Search  from '@/components/shared/Search'
-import { getOrdersByEvent } from '@/lib/actions/order.actions'
-import { formatDateTime, formatPrice } from '@/lib/utils'
-import { SearchParamProps } from '@/types'
-import { IOrderItem } from '@/lib/database/models/order.model'
+import Search from "@/components/shared/Search"
+import { getOrdersByEvent } from "@/lib/actions/order.actions"
+import { formatDateTime, formatPrice } from "@/lib/utils"
+import { SearchParamProps } from "@/types"
+import { IOrderItem } from "@/lib/database/models/order.model"
 
 const Orders = async ({ searchParams }: SearchParamProps) => {
-  const eventId = (searchParams?.eventId as string) || ''
-  const searchText = (searchParams?.query as string) || ''
+  const eventId = (searchParams?.eventId as string) || ""
+  const searchText = (searchParams?.query as string) || ""
 
   const orders = await getOrdersByEvent({ eventId, searchString: searchText })
 
@@ -1296,7 +1368,9 @@ const Orders = async ({ searchParams }: SearchParamProps) => {
           <thead>
             <tr className="p-medium-14 border-b text-grey-500">
               <th className="min-w-[250px] py-3 text-left">Order ID</th>
-              <th className="min-w-[200px] flex-1 py-3 pr-4 text-left">Event Title</th>
+              <th className="min-w-[200px] flex-1 py-3 pr-4 text-left">
+                Event Title
+              </th>
               <th className="min-w-[150px] py-3 text-left">Buyer</th>
               <th className="min-w-[100px] py-3 text-left">Created</th>
               <th className="min-w-[100px] py-3 text-right">Amount</th>
@@ -1316,9 +1390,14 @@ const Orders = async ({ searchParams }: SearchParamProps) => {
                     <tr
                       key={row._id}
                       className="p-regular-14 lg:p-regular-16 border-b "
-                      style={{ boxSizing: 'border-box' }}>
-                      <td className="min-w-[250px] py-4 text-primary-500">{row._id}</td>
-                      <td className="min-w-[200px] flex-1 py-4 pr-4">{row.eventTitle}</td>
+                      style={{ boxSizing: "border-box" }}
+                    >
+                      <td className="min-w-[250px] py-4 text-primary-500">
+                        {row._id}
+                      </td>
+                      <td className="min-w-[200px] flex-1 py-4 pr-4">
+                        {row.eventTitle}
+                      </td>
                       <td className="min-w-[150px] py-4">{row.buyer}</td>
                       <td className="min-w-[100px] py-4">
                         {formatDateTime(row.createdAt).dateTime}
