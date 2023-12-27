@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-    <a href="https://youtu.be/zgGhzuBZOQg" target="_blank">
+    <a href="https://clean-app-store.vercel.app/" target="_blank">
       <img src="https://github.com/pandawaa/clean-app-store/blob/main/public/assets/images/home-page.png">
     </a>
   <br />
