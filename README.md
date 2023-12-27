@@ -1,7 +1,7 @@
 <div align="center">
   <br />
     <a href="https://youtu.be/zgGhzuBZOQg" target="_blank">
-      ![Uploading Screenshot 2023-12-27 113027.png…]()
+      <img src="https://github.com/clean-app-store/public/assets/images/home-page.png alt="Project Banner">
     </a>
   <br />
 
