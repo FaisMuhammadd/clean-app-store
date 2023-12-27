@@ -1,7 +1,7 @@
 <div align="center">
   <br />
     <a href="https://youtu.be/zgGhzuBZOQg" target="_blank">
-      <img src="https://github.com/clean-app-store/public/assets/images/home-page.png alt="Project Banner">
+      <img src="https://github.com/pandawaa/clean-app-store/public/assets/images/home-page.png alt="Project Banner">
     </a>
   <br />
 
