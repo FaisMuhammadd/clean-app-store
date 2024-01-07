@@ -132,9 +132,4 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 
 ## <a name="links">🔗 Links</a>
 
-<<<<<<< HEAD
 Project Website can be found in Link [here](https://clean-app-store.vercel.app)
-=======
-Project Website can be found in Link [here](https://clean-app-store.vercel.app/)
-
->>>>>>> 86a640601243a5ec7614b8effbf5a93b3dd96023
